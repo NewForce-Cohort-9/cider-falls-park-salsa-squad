@@ -1,0 +1,1 @@
+import {getAttractions} from "./database.js"

@@ -1,0 +1,1 @@
+import {getAreas} from "./database.js"
