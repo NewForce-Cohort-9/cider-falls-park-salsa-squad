@@ -79,14 +79,18 @@ const database = {
     },
     {
         id: 3,
-        name: "Office Park"
+        name: "Office"
     },
     {
         id: 4,
+        name: "Park"
+    },
+    {
+        id: 6,
         name: "Children Play Area"
     },
     {
-        id: 5,
+        id: 7,
         name: "Food Vendor"
     }],
 
@@ -171,11 +175,108 @@ const database = {
         name: "Eric Cartman",
         areaId: 3
     }],
-    AreaServices:[{
+    
+    areaServices: [
+    {
+        id: 1,
+        areaId: 1,
+        servicesId: 1
+    }, {
+        id: 2,
+        areaId: 1,
+        servicesId: 2
+    }, {
+        id: 3,
+        areaId: 1,
+        servicesId: 3
+    }, {
+        id: 4,
+        areaId: 2,
+        servicesId: 4
+    }, {
+        id: 5,
+        areaId: 2,
+        servicesId: 5
+    }, {
+        id: 6,
+        areaId: 2,
+        servicesId: 6
+    }, {
+        id: 7,
+        areaId: 3,
+        servicesId: 7
+    }, {
+        id: 8,
+        areaId: 3,
+        servicesId: 8
+    }, {
+        id: 9,
+        areaId: 3,
+        servicesId: 9
+    }, {
+        id: 10,
+        areaId: 3,
+        servicesId: 5
+    }, {
+        id: 11,
+        areaId: 4,
+        servicesId: 3
+    }, {
+        id: 12,
+        areaId: 4,
+        servicesId: 4
+    }, {
+        id: 13,
+        areaId: 5,
+        servicesId: 7
+    }, {
+         id: 14,
+        areaId: 5,
+        servicesId: 8
+    }, {
+        id: 15,
+        areaId: 5,
+        servicesId: 9
+    }, {
+        id: 16,
+        areaId: 6,
+        servicesId: 4
+    }, {
+        id: 17,
+        areaId: 6,
+        servicesId: 5
+    },{
+        id: 18,
+        areaId: 6,
+        servicesId: 10
+    }],
 
-    }
-    ]
-
+    areaAttractions: [
+    {
+        id: 1,
+        areaId: 3,
+        attractionId: 1
+    }, {
+        id: 2,
+        areaId: 3,
+        attractionId: 2
+    }, {
+        id: 3,
+        areaId: 5,
+        attractionId: 3
+    }, {
+        id: 4,
+        areaId: 5,
+        attractionId: 4
+    }, {
+        id: 5,
+        areaId: 5,
+        attractionId: 6
+    }, {
+        id: 6,
+        areaId: 6,
+        attractionId: 7
+    }]
 
 }
 
@@ -193,4 +294,12 @@ export const getAttractions = () => {
 
 export const getGuests = () => {
     return database.guests.map(guest => ({...guest}))
+}
+
+export const getAreaServices = () => {
+    return database.areaServices.map(areaService => ({...areaService}))
+}
+
+export const getAreaAttractions = () => {
+    return database.areaAttractions.map(areaAttraction => ({...areaAttraction}))
 }
