@@ -5,7 +5,7 @@ import {Services} from "./Services.js"
 const mainContainer = document.querySelector("#container")
 
 const applicationHTML = `
-<h1>Brewed Awakenings</h1>
+<h1>Cider Falls</h1>
 <article class="details">
     <section class="detail--column list details__employees">
         <h2>Services</h2>
