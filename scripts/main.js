@@ -1,4 +1,5 @@
 import {Services} from "./Services.js"
+import { GuestList } from "./Guests.js"
 
 
 
@@ -11,8 +12,12 @@ const applicationHTML = `
         <h2>Services</h2>
         ${Services()}
     </section>
-    <section class="detail--column list details__products">
-        <h2>Products</h2>
+    <article class="guests">
+    <section>
+        <h2>Guests</h2>
+        ${GuestList()}
+    </section>
+</article
        
     </section>
 </article>
