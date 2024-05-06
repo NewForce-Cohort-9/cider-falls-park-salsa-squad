@@ -1,1 +1,1 @@
-import {getAreas} from "./database.js"
+import {getAreas, getAttractions} from "./database.js"
