@@ -175,7 +175,7 @@ const database = {
         name: "Eric Cartman",
         areaId: 3
     }],
-
+    
     areaServices: [
     {
         id: 1,
