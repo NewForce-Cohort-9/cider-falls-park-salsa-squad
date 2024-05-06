@@ -56,7 +56,7 @@ export const Services = () => {
       (clickEvent) => {
           const itemClicked = clickEvent.target
 
-          for (const iterator of object) {
+          for (const areaService of areaServices) {
               const service = findService(services)
               const area = findArea(areas)
             
