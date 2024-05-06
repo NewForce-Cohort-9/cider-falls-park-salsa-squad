@@ -1,12 +1,67 @@
+/*--------- main content CSS: START---------*/
+body {
+    background-color: #2d9a9c;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    border: 3px solid white;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    border: 12px groove #001516;
+    background-color: rgb(231, 202, 165);
+}
+
+.services h1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    text-shadow: 2px -1.5px whitesmoke;
+    font-weight: bolder;
+}
+
+.services--list__container {
+    display: inline;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 1em;
+}
+
+.services--list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    text-shadow: 2px -1.5px whitesmoke;
+    width: 100%;
+}
+
 .guests h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30px;
 }
 
 .guests ul {
-    font-size: 12px;
+    font-size: 20px;
 }
+/*--------- main content CSS: END---------*/
 
+
+/*--------- header content CSS: START---------*/
 .header {
     display: flex;
     background-color: #045c5a;
@@ -48,15 +103,14 @@
     width: 57%;
     font-family:'Abel','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 9rem;
-    text-shadow: 2px 2px lightsteelblue;
+    text-shadow: 2px -2px lightsteelblue;
     font-weight: bolder;
     text-align: center;    
 }
+/*--------- header content CSS: END---------*/
 
-body {
-    background-color: #2d9a9c;
-}
 
+/*--------- footer content CSS: START---------*/
 .footer {
     display: flex;
     flex-direction: column;
@@ -64,8 +118,11 @@ body {
     background-color: #045c5a;
     height: 18rem;
     border-top: 10px ridge rgb(14, 77, 113);
+    background-image: url("../images/footerbg.gif");
     background-repeat: no-repeat;
     background-size: cover;
+    background-blend-mode: overlay;
+    background-position: center;
     margin-top: 10rem;
     box-shadow: 5px 7px #002526;
 }
@@ -76,7 +133,9 @@ body {
     width: 100%;
     height: 10%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
     font-size: 24px;
+    text-shadow: 2px -1px rgb(136, 105, 67);
     font-weight: bold;
     text-align: center;
 }
@@ -87,7 +146,10 @@ body {
     margin: auto;
     width: 100%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
     font-size: 20px;
+    text-shadow: 2px -1px rgb(136, 105, 67);
     font-weight: bold;
     text-align: left;
 }
+/*--------- footer content CSS: END---------*/

@@ -1,6 +1,5 @@
 import {Services} from "./Services.js"
 import { GuestList } from "./Guests.js"
-
 import { Areas } from "./Areas.js"
 
 
@@ -9,30 +8,26 @@ const mainContainer = document.querySelector("#container")
 const applicationHTML = 
 
 `
-<h1>Area List Test</h1>
-<article class="details">
-    <section class="detail--column list details__areas">
-        <h2>Areas</h2>
-        ${Areas()}
-    </section>
- 
-    <article class="details">
-    <section class="detail--column list details__employees">
-        <h2>Services</h2>
+<article class="services">
+    <h1>Services</h1>
+    <section class="services--list__container">
         ${Services()}
     </section>
-    <article class="guests">
-    <section>
-        <h1>Guests</h1>
+</article>
+
+<article class="areas">
+    <h1>Areas</h1>
+    <section class="areas--list__container">
+        ${Areas()}
+    </section>
+</article>
+
+<article class="guests">
+    <h1>Guests</h1>
+    <section class="guests--list__container">
         ${GuestList()}
     </section>
 </article
        
-    </section>
-</article>
-<article class="orders">
-    <h2>Orders</h2>
-  
-</article>
 `
 mainContainer.innerHTML = applicationHTML

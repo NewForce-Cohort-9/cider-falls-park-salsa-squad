@@ -6,7 +6,7 @@ const areaServices = getAreaServices()
 
 
 export const Services = () => {
-    let html = `<div> Services: `
+    let html = `<div class="services--list">`
     let whattoDO = true
 
         for (const service of services) {
@@ -20,7 +20,7 @@ export const Services = () => {
             html +=`<div data-id="${services.id}"
             data-type="service"
             data-name="${services.name}"
-            >${service.name}</div>`
+            >· ${service.name}</div>`
         }
     
     html += `</div>`
