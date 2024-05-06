@@ -1,9 +1,12 @@
-<<<<<<< HEAD
-#guests {
-    position: relative;
-    text-align: right;
+.guests h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
 }
-=======
+
+.guests ul {
+    font-family: 12px;
+}
+
 .header {
     display: flex;
     background-color: #045c5a;
@@ -88,4 +91,3 @@ body {
     font-weight: bold;
     text-align: left;
 }
->>>>>>> main
