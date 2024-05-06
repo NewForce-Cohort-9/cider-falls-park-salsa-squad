@@ -1,9 +1,7 @@
-<<<<<<< HEAD
-#guests {
+.guests {
     position: relative;
     text-align: right;
 }
-=======
 .header {
     display: flex;
     background-color: #045c5a;
@@ -88,4 +86,3 @@ body {
     font-weight: bold;
     text-align: left;
 }
->>>>>>> main
