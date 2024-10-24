@@ -33,10 +33,10 @@ export const Services = () => {
   const findService = (areaService, allServices) => {
       for(const service of allServices) {
           if(service.id === parseInt(areaService.serviceId)) {
-              return service.name
+              return service
           }
       }
-
+      return null
   }
 
  // What areas have services
@@ -47,7 +47,7 @@ export const Services = () => {
               return area.name
           }
       }
-
+      return null
   }
 
 
@@ -56,21 +56,20 @@ export const Services = () => {
       (clickEvent) => {
           const itemClicked = clickEvent.target
 
-          for (const areaService of areaServices) {
-              const service = findService(services)
-              const area = findArea(areas)
-            
-          }
-
+          
           if (itemClicked.dataset.type === "service") {
-
-              const serviceId = itemClicked.dataset.id
-
-
-                  if (service.id === parseInt(serviceId)) {
-                     window.alert(`${service.name} is available in ${area.name} `)
-                  }
+                const serviceId = parseInt(itemClicked.dataset.id)
+                for (const areaService of areaServices) {
+                  const service = findService(areaService, services)
+                  const area = findArea(areaService, areas)
                 
+                                  
+                  
+                  if (service && service.id === serviceId) {
+                      window.alert(`${service.name} is available in ${area} `)
+                    }
+                    
+                }
           }            
         
       }
